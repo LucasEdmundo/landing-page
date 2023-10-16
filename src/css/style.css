@@ -1,0 +1,163 @@
+body {
+    max-width: 1440px;
+    max-height: 880px;
+    background: url(../images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    margin: 40px;
+}
+
+.container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.container .information {
+    margin-left: 100px;
+    max-width: 400px;
+    margin-top: 50px;
+}
+
+.container .information h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container .information p {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin-top: 20px;
+    width: 450px;
+}
+
+.container .button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    background-color: #fff;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.container .button a {
+    color: hsl(257, 40%, 49%)
+}
+
+.container .button a:hover {
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social i {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.social {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.social a:hover i {
+    color: hsl(300, 69%, 71%);
+}
+
+@media(max-width:425px) {
+    .logo img {
+        max-width: 150px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .container .information h1 {
+        font-size: 25px;
+        text-align: center;
+        width: 390px;
+        margin-left: -150px;
+    }
+
+    .container .information p {
+        margin-top: 20px;
+        margin-left: -100px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .container .button {
+        width: 200px;
+        height: 35px;
+        border-radius: 20px;
+        margin-left: -50px;
+        margin-top: 30px;
+    }
+
+    .container .button a:hover {
+        color: #fff;
+        background-color: hsl(300, 69%, 71%);
+        width: 200px;
+        height: 35px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:375px) {
+    .social {
+        margin-left: 60px;
+    }
+}
+
+@media(max-width:320px) {
+
+    .container .information h1 {
+        font-size: 25px;
+        text-align: center;
+        width: 310px;
+        margin-left: -150px;
+    }
+
+    .container .information p {
+        margin-top: 20px;
+        margin-left: -100px;
+        width: 200px;
+        text-align: center;
+    }
+
+    .container .button {
+        width: 200px;
+        height: 35px;
+        border-radius: 20px;
+        margin-left: -100px;
+        margin-top: 30px;
+    }
+
+    .social {
+        margin-left: 30px;
+    }
+}
