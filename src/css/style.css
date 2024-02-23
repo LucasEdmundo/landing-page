@@ -1,8 +1,12 @@
 body {
-    max-width: 1440px;
-    max-height: 880px;
     background: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: hsl(257, 40%, 49%);
+    
+    min-height: 100vh;
+    min-width: 100%;
     margin: 40px;
 }
 
@@ -124,12 +128,13 @@ body {
         display: flex;
         justify-content: center;
         margin-top: 50px;
+        padding-right: 50px;
     }
 }
 
 @media(max-width:375px) {
     .social {
-        margin-left: 60px;
+        padding-right: 30px;
     }
 }
 
@@ -158,6 +163,6 @@ body {
     }
 
     .social {
-        margin-left: 30px;
+        padding-right: 60px;
     }
 }
